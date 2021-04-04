@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+body{
+    background: linear-gradient(180deg, #59dfd8, #fda085);
+   
+  
+    
+    min-height: 100vh;
+}
+header{
+    color: blue;
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form input{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 500;
+}
+form input,
+form button{
+    
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+    outline: none;
+
+}
+
+form button{
+    cursor: pointer;
+    color: #ff6f47;
+    background: white;
+    transition: all 0.3s ease;
+
+}
+form button:hover{
+    color: white;
+    background: #ff6f47;
+}
+
+.todo-container{
+    
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+}
+.todo-list{
+    min-width: 50%;
+    list-style: none;
+    
+}
+.todo{
+    margin: 1rem 1rem;
+    /* height: 6vh; */
+    /* width: 0%; */
+    background: whitesmoke;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex: 1;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.8rem;
+}
+.delete-btn{
+    padding: 0.8rem;
+    background: #ff6f47;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.fas fa-trash{
+    pointer-events: none;
+    /* outline: none; */
+}
+
+
+.deletion{
+    transform: translateY(8rem) rotateZ(30deg);
+    opacity: 0;
+}
+
+
